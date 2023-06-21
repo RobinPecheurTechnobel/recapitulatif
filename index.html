@@ -158,6 +158,36 @@
                 Or tant que le navigateur n'a pas encore lu dans la page html, il ne reconnaîtra pas ces éléments là.<br>
                 Pour se faire, on appelera le script à la fin du body</p>
             </article>
+            <article>
+                <h1>Sortie rapide</h1>
+                <p>On peut rapidement afficher des valeurs avec console.log();<br>
+                console.log(5); sortira une ligne 5 dans la console.</p>
+                <p>alert()  affiche une sorte de pop up avec la valeur qu'on souhaite afficher</p>
+            </article>
+            <article>
+                <h1>Les variables</h1>
+                <p>Javascript gére ses variables manières dynamiques c'est à dire qu'il détermine lui-même le type de la variable.<br>
+                En indiquant le nom de la variable et en lui assignant une variable avec un égal, il va "s'occuper le typage".<br>
+                Exemple : maVariable = 5;
+                Soucis cette variable à une portée globale<br>
+                En commençant par let, on limite sa portée au block où il a été déclaré et ses enfants.<br>
+                On verra aussi du var mais est déprécié</p>
+                <p>Du fait du typage dynamique, js rajoute une condition supplémentaire : === ou !==<br>
+                En plus de vérifier l'égalité ou la différence, il vérifie si le type match entre les 2 éléments<br>
+                Exemple: maVariable === 8; <br>
+                Si maVarible = "8", on aura false en retour</p>
+                <p>Cas particulier NaN et Infinity</p>
+                <p>Const existe aussi en js et comme pour c#, on l'utilisera pour les constantes.</p>
+                <p>Les conventions d'écriture sont les mêmes qu'en c#</p>
+                <h2>Parsing</h2>
+                <p>On retrouve le ".toString()"</p>
+                <p>Petite nouveauté : "parseInt()"", "parseFloat()"",... comme leur nom l'indique parse les variables</p>
+                <p>On puet avoir l'indication de la variable avec "type of"</p>
+                <p>On trouvera d'autre format comme le type date, les fonctions</p>
+                <p>Il y a aussi les collections (articles à venir).</p>
+                <p>Le type null est présent mais est différent de "non assigné" et "non défini"</p>
+
+            </article>
         </section>
         <script src="./script/script.js"></script>
     </body>
