@@ -75,6 +75,34 @@
                 <a href="#navigateur">Ou un lien sur un élément de la page, on indiquera l'id de l'élément (on parle dans ce cas d'un ancre)</a>
             </article>
         </section>
+        <section>
+            <article>
+                <h1>les médias</h1>
+                <p>On peut disposer des éléments qui ne sont pas des textes comme des images ou des vidéos.</p>
+                <p>Pour une image, on utilisera la balise orpheline img.<br>
+                Cette balise peut utliser les attribut alt et title.<br>
+                alt sert surtout pour la navigateur aidant les personnes avec un handicap<br>
+                title permet d'afficher un texte au survol de l'image avec la souris</p>
+                <img src="./asset/chat.jpg" alt="une image de chat" title="une image de chat">
+                <p>On peut utiliser la double balise figure pour encadrer une image accompagnée d'une légende<br>
+                Cette légende sera dés lors dans une bouble balise figcaption</p>
+                <figure>
+                    <figcaption>Toujours le même chat</figcaption>
+                    <img src="./asset/chat.jpg" title="Et oui...">
+                    <figcaption>Et la légende peut être en dessous et au dessus de l'image</figcaption>
+                </figure>
+                <p>Il existe aussi une balise vidéo mais elle n'est pas présenter à la formation</p>
+                <video controls>
+                    <source src="http://techslides.com/demos/sample-videos/small.ogv">
+                </video>
+                <p>Très rare ou d'une utilité quand on n'apprécie pas les : iframes (toujours pas dans la formation)<br>
+                Ce type de balise permet de faire un bout de site dans le notre<br>
+                Par exemple: embarquer une vidéo youtube ou une pub sur le côté de beaucoup de site</p>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <p>Ici, j'ai tenter de mettre un rick roll, mais je me suis heurté à un soucis que tu risque de rencontré : le droit d'auteur<br>
+                Dans ce cas, il indique que la vidéo n'est pas disponible mais il donne un lien pour y accéder.</p>
+            </article>
+        </section>
     </body>
     <script src="./script/script.js"></script>
 </html>
