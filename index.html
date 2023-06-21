@@ -103,6 +103,43 @@
                 Dans ce cas, il indique que la vidéo n'est pas disponible mais il donne un lien pour y accéder.</p>
             </article>
         </section>
+        <section id="BaseCss">
+            <article>
+                <h1>Le Cascade Style Sheet</h1>
+                <p>On vu les balises html.<br>
+                Avec le css, on peut leur changer leur apparance</p>
+                <h2>Disposition</h2>
+                <p>On peut placer du style dans nos balises html<br>
+                    <strong style="color:red">C'est déconseillé</strong> (même si je viens de faire pour mettre en rouge mon déconseillé).<br>
+                La raison principale, c'est que ce style là est prioritaire comparé à celui qu'on retrouvera dans nos fichier css externe.</p>
+                <h2>Dans notre fichier externe</h2>
+                <p>Transition impecable pour le css dans un fichier externe!<br>
+                On appelera ce fichier dans la balise head de note fichier html</p>
+                <p>Par une balise orpheline link, avec une propriété rel="stylesheet" et une indication de la source de fichier : href="./style/style.css" </p>
+                <p>Dans ce fichier, on indique les éléments qu'on veut modifier par un <b>sélecteur</b>, puis des accolades avec le style qu'on veut appliquer.<br>
+                Chaque style devra être terminer par une ;<br>
+                Et on peut commenter acomme en c# : avec // pour une ligne et /* pour plusieurs*/</p>
+                <h3>Les sélecteurs</h3>
+                <p>On peut indiquer un type de balise comme body.<br>
+                On être plus précis en indiquant des classe en commençant par un point : .maClasse<br>
+                #monId pour les identifiants.</p>
+                <p>On peut préciser notre sélecteur<br>
+                Par exemple: body .maClasse pour toutes les balises avec la classe maClasse contenu dans mon body<br>
+                Avec body > .maClasse, on limite aux enfants directement sous body<br>
+                body + .maClasse touche aux premier enfant correspond<br>
+                body img[alt] toujours au images avec un attribut alt</p>
+                <p>On peut mettre plusieurs sélecteurs si on les sépare par des ',' avant un block de style(entre les accolades). </p>
+                <p>Il y a un ordre de lecture des styles:</p>
+                <ul>
+                    <li>le style dans les balises html</li>
+                    <li>le style sur les sélecteurs d'id du dernier fichier css indiqué</li>
+                    <li>le style sur les sélecteurs d'id des premiers fichiers css indiqués</li>
+                    <li>le style sur les sélecteurs de classe du dernier fichier css indiqué</li>
+                    <li>le style sur les sélecteurs de classe des premiers fichiers css indiqués</li>
+                    <li>...</li>
+                </ul>
+            </article>
+        </section>
     </body>
     <script src="./script/script.js"></script>
 </html>
