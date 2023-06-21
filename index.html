@@ -1,14 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
-    
-
-</body>
-<script src="./script/script.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="./style/style.css">
+    </head>
+    <body>
+        <section id="navigateur">
+            <article>
+                <h1>Ton navigateur est un outils puissant</h1>
+                <p>La création d'un site web page html a pour pour but d'être lu sur un navigateur.<br>
+                Mais ton navigateur peut aussi t'aider dans le développement!<br>
+                Par exemple sur l'image suivante, tu peut voir la page google ouverte avec l'inspecteur de firefox.
+                Il existe des raccourcis pour l'ouvrir mais on peut aussi y accéder depuis la paramètre du navigateur.</p>
+                <img src="./asset/googleDansInspecteur.png">
+                <p>Pour cette partie de la formation, on se concentrer sur les onglets <b>Inspecteur</b> et <b>Console</b>
+                    L'inspecteur va nous permettre de voir nos balises html et l'application des styles sur celles-ci. 
+                    Quand à la Console, elle est présente pour les messages d'erreur et certaines sorties de notre fichiers javascripts.<br><br>
+                    Les détails des balises de cette section seront expliqués plus tard.<br>
+                    Le plus important à retenir ici, c'est que ton navigateur est ton ami!
+                </p>
+            </article>
+        </section>
+        <section id="baliseTexte">
+            <article>
+                <h1>Les balises textes et les collections</h1>
+                <h2>Le titre précédent est dans une double balise h1 (et ce sous-titre dans du h2)</h2>
+                <h6>On peut descendre jusqu'à 6 niveaux de titre (ici h6)</h6>
+                <p>paragraphe</p>
+                <p>la balise br permet de faire un retour à la ligne supplémentaire</p>
+                <p>Comme ça!</p><br>
+                <p>Historiquement les textes étaient stockés dans des div.</p>
+                <p>On peut toujours en faire, mais l'arrivée de balise plus explicite que comme section ou article sont à privilégié.<br>
+                    Leurs comportement ne diffère pas du div mais elles rendent la lecture du fichier html plus simple.<br>
+                    Dans cette même logique, il existe des balises pour des zones de site : navbar, footer, aside, ...</p>
+                <p>Un commentaire peut être glissé dans le fichier html.<br>
+                    Il ne sera pas exécuté par le navigateur, mais pourra être lu dans l'inspecteur<br>
+                Pour ce faire, on encadrera ce qu'on veut commenter avec < !-- et terminera par --></p>
+                <!--Comme ceci-->
+                <p>Il existe aussi tout une série de balise qui s'applique pour le contenu d'un texte:</p>
+                <ul>
+                    <li><strike>barré</strike></li>
+                    <li><u>souligné</u></li>
+                    <li><b>gras</b></li>
+                    <li><strong>important (un autre gras)</strong></li>
+                    <li>Normal <small>petit</small></li>
+                </ul>
+                <p>On peut lister des choses grâce à une double balise ol (liste ordonnée) ou ul (liste non ordonnée)</p>
+                <p>dans une double balise ul (ou ol), on placera une double balise li pour chaque élément</p>
+                <h3>Exemple : mes courses</h3>
+                <ol>
+                    <li>Papier Toilette</li>
+                    <li>Ketchup</li>
+                    <li>Chips paprika</li>
+                </ol>
+                <p>Un peut plus rare, on peut faire une liste de définition avec une double balise dl. 
+                Dans ce cas, on placera le terme dans une double balise dt et sa définition dans une double balise dd</p>
+                <dl>
+                    <dt>terme1</dt>
+                    <dd>définition 1</dd>
+                    <dt>terme2</dt>
+                    <dd>définition 2</dd>
+                </dl>
+            </article>
+        </section>
+    </body>
+    <script src="./script/script.js"></script>
 </html>
