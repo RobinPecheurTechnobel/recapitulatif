@@ -33,13 +33,21 @@
                 <p>Comme ça!</p><br>
                 <p>Historiquement les textes étaient stockés dans des div.</p>
                 <p>On peut toujours en faire, mais l'arrivée de balise plus explicite que comme section ou article sont à privilégié.<br>
-                    Leurs comportement ne diffère pas du div mais elles rendent la lecture du fichier html plus simple.<br>
-                    Dans cette même logique, il existe des balises pour des zones de site : navbar, footer, aside, ...</p>
+                Leurs comportement ne diffère pas du div mais elles rendent la lecture du fichier html plus simple.<br>
+                Dans cette même logique, il existe des balises pour des zones de site : navbar, footer, aside, ...</p>
+            
+                <span>Une balise span existe aussi.<br>
+                Elle fait comme la balise div à la différence qu'elle fonctionne en "inline" plutôt qu'en "block" (détail plus loin)</span>
                 <p>Un commentaire peut être glissé dans le fichier html.<br>
-                    Il ne sera pas exécuté par le navigateur, mais pourra être lu dans l'inspecteur<br>
+                Il ne sera pas exécuté par le navigateur, mais pourra être lu dans l'inspecteur<br>
                 Pour ce faire, on encadrera ce qu'on veut commenter avec < !-- et terminera par --></p>
                 <!--Comme ceci-->
-                <p>Il existe aussi tout une série de balise qui s'applique pour le contenu d'un texte:</p>
+                
+                <h2>Les listes</h2>
+                
+                <p>On peut lister des choses grâce à une double balise ol (liste ordonnée) ou ul (liste non ordonnée)</p>
+                <p>dans une double balise ul (ou ol), on placera une double balise li pour chaque élément</p>
+                <p>Il existe aussi tout une série de balise qui s'applique pour le contenu d'un texte, en voici une liste:</p>
                 <ul>
                     <li><strike>barré</strike></li>
                     <li><u>souligné</u></li>
@@ -47,9 +55,7 @@
                     <li><strong>important (un autre gras)</strong></li>
                     <li>Normal <small>petit</small></li>
                 </ul>
-                <p>On peut lister des choses grâce à une double balise ol (liste ordonnée) ou ul (liste non ordonnée)</p>
-                <p>dans une double balise ul (ou ol), on placera une double balise li pour chaque élément</p>
-                <h3>Exemple : mes courses</h3>
+                <p>Autre exemple : une liste de course</p>
                 <ol>
                     <li>Papier Toilette</li>
                     <li>Ketchup</li>
@@ -63,6 +69,9 @@
                     <dt>terme2</dt>
                     <dd>définition 2</dd>
                 </dl>
+                <h2>On peut aussi faire texte avec des liens</h2>
+                <a href ="https://www.google.com" target="_blank">Un lien avec une page externe, le target blank ouvre la page dans un autre onglet (ici google) </a><br>
+                <a href="#navigateur">Ou un lien sur un élément de la page, on indiquera l'id de l'élément (on parle dans ce cas d'un ancre)</a>
             </article>
         </section>
     </body>
