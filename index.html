@@ -147,6 +147,18 @@
                 <p>Ce contenu va arriver</p>
             </article>
         </section>
+        <section id="Javascript">
+            <article>
+                <h1>Où?</h1>
+                <p>Comme avec le css, on peut en mettre dans une balise html (à éviter si possible).<br>
+                Il possible de placer une double balises script dans code html et on place nos lignes de js.<br>
+                Note : la balise noscript existe aussi quand indiquer au utilisateur qui utiliserait un navigateur ne gérant pas js un peu message.</p>
+                <p>Toujours comme avec css, on peut placer dans le head avec une balise script avec une src indiquant où se trouve le fichier.</p>
+                <p>Mais on pourrait se trouver avec des comportements bizarres : on manipulera des élémnts denotre page.<br>
+                Or tant que le navigateur n'a pas encore lu dans la page html, il ne reconnaîtra pas ces éléments là.<br>
+                Pour se faire, on appelera le script à la fin du body</p>
+            </article>
+        </section>
+        <script src="./script/script.js"></script>
     </body>
-    <script src="./script/script.js"></script>
 </html>
