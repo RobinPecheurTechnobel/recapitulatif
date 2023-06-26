@@ -145,7 +145,63 @@
         <section id="styleCss">
             <article>
                 <h1>Contenu du Css</h1>
-                <p>Ce contenu va arriver</p>
+                <p>Maintenant qu'on a vu comment désigner des balises html par des classes ou des id, nous allons voir des styles que l'on peut leur appliquer.</p>
+                <h2>Formatage du texte</h2>
+                <h3>Font-size</h3>
+                <p>Avec font-size, on peut gérer la taille du texte.<br>
+                En fonction de "l'unité" choisit, la taille sera absolue (taille fixe) ou relative à la fenêtre ou la balise qui contient ce texte.</p>
+                <p>px pour les pixels va définir une taille fixe de notre texte.<br>
+                %, em et rem va faire varier la taille en fonction des parents (rem se base sur la fonct-size de la balise html).</p>
+                <h3>Gras</h3>
+                <p> Avec <b>font-weight : bold;</b> on peut mettre en grase les éléments choisit</p>
+                <h3>Italique</h3>
+                <p>On peut mettre en italique avec <b>font-style : italic;</b></p>
+                <h3>Alignement horizontal</h3>
+                <p>On jouer sur l'alignement horizontal avec <b>text-align</b>.<br> les valeurs possibles sont :</p>
+                <ul>
+                    <li>center</li>
+                    <li><u>left</u></li>
+                    <li>right</li>
+                    <li>justify</li>
+                </ul>
+                <h3>Casse du texte</h3>
+                <p>On peut aussi modifier la casse du texte grâce à <b>text-transform</b>
+                <br> les valeurs possibles sont :</p>
+                <ul>
+                    <li>capitalize</li>
+                    <li>uppercase</li>
+                    <li>lowercase</li>
+                    <li><u>none</u></li>
+                </ul>
+                <h3>mises en valeur du texte</h3>
+                <p><b>text-decoration</b> permet de jouer sur la mise en valeur du texte (comme les balises b, i , strong ...)<br> les valeurs possibles sont :</p>
+                <ul>
+                    <li>underline</li>
+                    <li>line-through</li>
+                    <li>overline</li>
+                    <li><u>none</u></li>
+                </ul>
+                <div id="labo1">
+                    <article class="example">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam maiores harum aut recusandae exercitationem fugiat velit doloribus sed quia! Eveniet eius beatae ab fugiat ratione animi a alias laboriosam at itaque velit possimus nihil doloremque pariatur, perspiciatis facilis ipsa? Officiis quod ut iste nisi enim? Modi assumenda iste at.</p>
+                    </article>
+                    <article class="expérimentation">
+                        <label for="testerVosClasses">Tester des styles ici:</label>
+                        <textarea id="testerVosClasses" name="testerVosClasses"
+                                rows="7" cols="33" onkeypress="texteAreaChangeStyleStyleCss()"></textarea>
+                        <div class="mesBoutons">
+                            <button id="btnAppliquerStyleCss" onclick="appliquerStyleCss()">Appliquer</button>
+                            <button id="btnFontSizeStyleCss" onclick="changeTexteStyleStyleCss()">Absolu</button>
+                            <button onclick="resetStyleCss()">Recommencer</button>
+                        </div>
+                    </article>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h1>Les formulaires</h1>
+                
             </article>
         </section>
         <section id="Javascript">
