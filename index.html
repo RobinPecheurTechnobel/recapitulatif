@@ -245,6 +245,51 @@
                     <li title="ligne au dessus">overline</li>
                     <li title="rien"><u>none</u></li>
                 </ul>
+                <h3>Gestion des dépassements de la zone de texte</h3>
+                <p><b>overflow</b> va être important dans le cas où un texte peut être plus grand que la zone qui lui est dédier
+                Les valeurs possibles sont :</p>
+                <ul>
+                    <li title="rend visible le texte dépassant la zone">visible</li>
+                    <li title="cache le texte dépassant la zone">hidden</li>
+                    <li title="cache le texte dépassant la zone, en empêchant tout scroll (notamment par script)">clip</li>
+                    <li title="met une barre de défilement et permet de scroll">scroll</li>
+                    <li title="comportement dépend des navigateurs">auto</li>
+                </ul>
+                <p><b>text-overflow</b> va jouer sur ce qui va être affiché pour indiquer que le texte à été coupé (parce qu'il dépasse sa zone dédier).
+                Les valeurs possibles sont :</p>
+                <ul>
+                    <li title="coupe brutal dans le texte">clip</li>
+                    <li title="coupe propre et affichage de '...' à la place de ce qui est caché">ellipsis</li>
+                    <li title="coupe propre et affichage de '-' à la place de ce qui est caché">"-"</li>
+                </ul>
+                <p><b>white-space</b> intervient sur les "blancs" (toute partie composé d'espace, de tabulation et de retour à la ligne) du texte.
+                Les valeurs possibles sont :</p>
+                <ul>
+                    <li title="aucun retour à la ligne">nowrap</li>
+                    <li title="les sauts de ligne s'appliquer pour remplir la zone de texte">normal</li>
+                    <li title="applique un saut de ligne uniquement sur br et caractère de saut de ligne">pre</li>
+                </ul>
+                <p><b>overflow-wrap</b> permet de jouer sur la "coupure" de mots quand le mot dépasse la zone prévue à cette effet.
+                Les valeurs possibles sont :</p>
+                <ul>
+                    <li title="le mot dépasse">normal</li>
+                    <li title="place une césure">anywhere</li>
+                    <li title="place une césure (ne permet une césure douce)">word-break</li>
+                </ul>
+                <h3>Police d'écriture</h3>
+                <p><b>font-familly</b> nous permet changer la police d'écriture de notre texte.
+                On peut indiquer plusieurs polices. Dans ce cas, le navigateur prendra la première qu'il trouve.
+                
+                <i>exemple : font-family : "Arial Black", Arial, Verdana;</i>
+
+                On peut aussi ajouter une police à notre site (soit local soit distante).
+                <i>exemple: @font-face{
+                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Open Sans";
+                    &nbsp;&nbsp;&nbsp;&nbsp;src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+                }
+                </i>
+                </p>
+
                 <div id="labo2">
                     <article class="example" id="labo2Example">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam maiores harum aut recusandae exercitationem fugiat velit doloribus sed quia! Eveniet eius beatae ab fugiat ratione animi a alias laboriosam at itaque velit possimus nihil doloremque pariatur, perspiciatis facilis ipsa? Officiis quod ut iste nisi enim? Modi assumenda iste at.</p>

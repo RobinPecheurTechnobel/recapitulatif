@@ -2,7 +2,8 @@
 
 
 /*Section styleCss*/
-let styleCssTextExpérimentation = "font-size : 15px;\nfont-weight : bold;\nfont-style : italic;\ntext-align : left;\ntext-transform : none;\ntext-decoration : none";
+let styleCssTextExpérimentation = "font-size : 15px;\nfont-weight : bold;\nfont-style : italic;\ntext-align : left;\ntext-transform : none;\ntext-decoration : none;";
+styleCssTextExpérimentation += "\noverflow-wrap : normal;\noverflow : hidden;\nwhite-space : pre-line;\ntext-overflow : ellipis;"
 
 function resetStyleCss(){
     document.getElementById("testerVosClasses").value = styleCssTextExpérimentation;
