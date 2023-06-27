@@ -3,7 +3,7 @@ section{
     padding:10px;
     border: 2px black solid;
 }
-section p{
+section p, article p{
     white-space : pre-line;
 }
 h1{

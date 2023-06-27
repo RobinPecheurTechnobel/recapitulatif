@@ -208,103 +208,121 @@
             <article>
                 <h1>Contenu du Css</h1>
                 <p>Maintenant qu'on a vu comment désigner des balises html par des classes ou des id, nous allons voir des styles que l'on peut leur appliquer.</p>
-                <h2>Formatage du texte</h2>
-                <h3>Font-size</h3>
-                <p>Avec <b>font-size</b>, on peut gérer la taille du texte.
-                En fonction de "l'unité" choisit, la taille sera absolue (taille fixe) ou relative à la fenêtre ou la balise qui contient ce texte.</p>
-                <p>px pour les pixels va définir une taille fixe de notre texte.
-                %, em et rem va faire varier la taille en fonction des parents (rem se base sur la fonct-size de la balise html).</p>
-                <h3>Gras</h3>
-                <p> Avec <b>font-weight : bold;</b> on peut mettre en grase les éléments choisit</p>
-                <h3>Italique</h3>
-                <p>On peut mettre en italique avec <b>font-style : italic;</b></p>
-                <h3>Alignement horizontal</h3>
-                <p>On jouer sur l'alignement horizontal avec <b>text-align</b>.
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="texte centré">center</li>
-                    <li title="texte aligné à gauche"><u>left</u></li>
-                    <li title="texte aligné à droite">right</li>
-                    <li title="justifie (espace) le texte pour prendre l'espace">justify</li>
-                </ul>
-                <h3>Casse du texte</h3>
-                <p>On peut aussi modifier la casse du texte grâce à <b>text-transform</b>
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="toute les première lettre de chaque mot est en majuscule.">capitalize</li>
-                    <li title="tout en majuscule">uppercase</li>
-                    <li title="tout en minuscule">lowercase</li>
-                    <li title="ne change rien"><u>none</u></li>
-                </ul>
-                <h3>mises en valeur du texte</h3>
-                <p><b>text-decoration</b> permet de jouer sur la mise en valeur du texte (comme les balises b, i , strong ...).
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="souligne">underline</li>
-                    <li title="barre">line-through</li>
-                    <li title="ligne au dessus">overline</li>
-                    <li title="rien"><u>none</u></li>
-                </ul>
-                <h3>Gestion des dépassements de la zone de texte</h3>
-                <p><b>overflow</b> va être important dans le cas où un texte peut être plus grand que la zone qui lui est dédier
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="rend visible le texte dépassant la zone">visible</li>
-                    <li title="cache le texte dépassant la zone">hidden</li>
-                    <li title="cache le texte dépassant la zone, en empêchant tout scroll (notamment par script)">clip</li>
-                    <li title="met une barre de défilement et permet de scroll">scroll</li>
-                    <li title="comportement dépend des navigateurs">auto</li>
-                </ul>
-                <p><b>text-overflow</b> va jouer sur ce qui va être affiché pour indiquer que le texte à été coupé (parce qu'il dépasse sa zone dédier).
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="coupe brutal dans le texte">clip</li>
-                    <li title="coupe propre et affichage de '...' à la place de ce qui est caché">ellipsis</li>
-                    <li title="coupe propre et affichage de '-' à la place de ce qui est caché">"-"</li>
-                </ul>
-                <p><b>white-space</b> intervient sur les "blancs" (toute partie composé d'espace, de tabulation et de retour à la ligne) du texte.
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="aucun retour à la ligne">nowrap</li>
-                    <li title="les sauts de ligne s'appliquer pour remplir la zone de texte">normal</li>
-                    <li title="applique un saut de ligne uniquement sur br et caractère de saut de ligne">pre</li>
-                </ul>
-                <p><b>overflow-wrap</b> permet de jouer sur la "coupure" de mots quand le mot dépasse la zone prévue à cette effet.
-                Les valeurs possibles sont :</p>
-                <ul>
-                    <li title="le mot dépasse">normal</li>
-                    <li title="place une césure">anywhere</li>
-                    <li title="place une césure (ne permet une césure douce)">word-break</li>
-                </ul>
-                <h3>Police d'écriture</h3>
-                <p><b>font-familly</b> nous permet changer la police d'écriture de notre texte.
-                On peut indiquer plusieurs polices. Dans ce cas, le navigateur prendra la première qu'il trouve.
-                
-                <i>exemple : font-family : "Arial Black", Arial, Verdana;</i>
+                <article>
+                    <h2>Formatage du texte</h2>
+                    <h3>Font-size</h3>
+                    <p>Avec <b>font-size</b>, on peut gérer la taille du texte.
+                    En fonction de "l'unité" choisit, la taille sera absolue (taille fixe) ou relative à la fenêtre ou la balise qui contient ce texte.</p>
+                    <p>px pour les pixels va définir une taille fixe de notre texte.
+                    %, em et rem va faire varier la taille en fonction des parents (rem se base sur la fonct-size de la balise html).</p>
+                    <h3>Gras</h3>
+                    <p> Avec <b>font-weight : bold;</b> on peut mettre en grase les éléments choisit</p>
+                    <h3>Italique</h3>
+                    <p>On peut mettre en italique avec <b>font-style : italic;</b></p>
+                    <h3>Alignement horizontal</h3>
+                    <p>On jouer sur l'alignement horizontal avec <b>text-align</b>.
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="texte centré">center</li>
+                        <li title="texte aligné à gauche"><u>left</u></li>
+                        <li title="texte aligné à droite">right</li>
+                        <li title="justifie (espace) le texte pour prendre l'espace">justify</li>
+                    </ul>
+                    <h3>Casse du texte</h3>
+                    <p>On peut aussi modifier la casse du texte grâce à <b>text-transform</b>
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="toute les première lettre de chaque mot est en majuscule.">capitalize</li>
+                        <li title="tout en majuscule">uppercase</li>
+                        <li title="tout en minuscule">lowercase</li>
+                        <li title="ne change rien"><u>none</u></li>
+                    </ul>
+                    <h3>mises en valeur du texte</h3>
+                    <p><b>text-decoration</b> permet de jouer sur la mise en valeur du texte (comme les balises b, i , strong ...).
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="souligne">underline</li>
+                        <li title="barre">line-through</li>
+                        <li title="ligne au dessus">overline</li>
+                        <li title="rien"><u>none</u></li>
+                    </ul>
+                    <h3>Gestion des dépassements de la zone de texte</h3>
+                    <p><b>overflow</b> va être important dans le cas où un texte peut être plus grand que la zone qui lui est dédier
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="rend visible le texte dépassant la zone">visible</li>
+                        <li title="cache le texte dépassant la zone">hidden</li>
+                        <li title="cache le texte dépassant la zone, en empêchant tout scroll (notamment par script)">clip</li>
+                        <li title="met une barre de défilement et permet de scroll">scroll</li>
+                        <li title="comportement dépend des navigateurs">auto</li>
+                    </ul>
+                    <p><b>text-overflow</b> va jouer sur ce qui va être affiché pour indiquer que le texte à été coupé (parce qu'il dépasse sa zone dédier).
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="coupe brutal dans le texte">clip</li>
+                        <li title="coupe propre et affichage de '...' à la place de ce qui est caché">ellipsis</li>
+                        <li title="coupe propre et affichage de '-' à la place de ce qui est caché">"-"</li>
+                    </ul>
+                    <p><b>white-space</b> intervient sur les "blancs" (toute partie composé d'espace, de tabulation et de retour à la ligne) du texte.
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="aucun retour à la ligne">nowrap</li>
+                        <li title="les sauts de ligne s'appliquer pour remplir la zone de texte">normal</li>
+                        <li title="applique un saut de ligne uniquement sur br et caractère de saut de ligne">pre</li>
+                    </ul>
+                    <p><b>overflow-wrap</b> permet de jouer sur la "coupure" de mots quand le mot dépasse la zone prévue à cette effet.
+                    Les valeurs possibles sont :</p>
+                    <ul>
+                        <li title="le mot dépasse">normal</li>
+                        <li title="place une césure">anywhere</li>
+                        <li title="place une césure (ne permet une césure douce)">word-break</li>
+                    </ul>
+                    <h3>Police d'écriture</h3>
+                    <p><b>font-familly</b> nous permet changer la police d'écriture de notre texte.
+                    On peut indiquer plusieurs polices. Dans ce cas, le navigateur prendra la première qu'il trouve.
+                    
+                    <i>exemple : font-family : "Arial Black", Arial, Verdana;</i>
 
-                On peut aussi ajouter une police à notre site (soit local soit distante).
-                <i>exemple: @font-face{
-                    &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Open Sans";
-                    &nbsp;&nbsp;&nbsp;&nbsp;src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
-                }
-                </i>
-                </p>
+                    On peut aussi ajouter une police à notre site (soit local soit distante).
+                    <i>exemple: @font-face{
+                        &nbsp;&nbsp;&nbsp;&nbsp;font-family: "Open Sans";
+                        &nbsp;&nbsp;&nbsp;&nbsp;src: url("/fonts/OpenSans-Regular-webfont.woff2") format("woff2");
+                    }
+                    </i>
+                    </p>
 
-                <div id="labo2">
-                    <article class="example" id="labo2Example">
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam maiores harum aut recusandae exercitationem fugiat velit doloribus sed quia! Eveniet eius beatae ab fugiat ratione animi a alias laboriosam at itaque velit possimus nihil doloremque pariatur, perspiciatis facilis ipsa? Officiis quod ut iste nisi enim? Modi assumenda iste at.</p>
-                    </article>
-                    <article class="expérimentation">
-                        <label for="testerVosClasses">Tester des styles ici:</label>
-                        <textarea id="testerVosClasses" name="testerVosClasses"
-                                rows="7" cols="33" onkeypress="texteAreaChangeStyleStyleCss()"></textarea>
-                        <div class="mesBoutons">
-                            <button id="btnAppliquerStyleCss" onclick="appliquerStyleCss()">Appliquer</button>
-                            <button id="btnFontSizeStyleCss" onclick="changeTexteStyleStyleCss()">Absolu</button>
-                            <button onclick="resetStyleCss()">Recommencer</button>
-                        </div>
-                    </article>
-                </div>
+                    <div id="labo2">
+                        <article class="example" id="labo2Example">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam maiores harum aut recusandae exercitationem fugiat velit doloribus sed quia! Eveniet eius beatae ab fugiat ratione animi a alias laboriosam at itaque velit possimus nihil doloremque pariatur, perspiciatis facilis ipsa? Officiis quod ut iste nisi enim? Modi assumenda iste at.</p>
+                        </article>
+                        <article class="expérimentation">
+                            <label for="testerVosClasses">Tester des styles ici:</label>
+                            <textarea id="testerVosClasses" name="testerVosClasses"
+                                    rows="7" cols="33" onkeypress="texteAreaChangeStyleStyleCss()"></textarea>
+                            <div class="mesBoutons">
+                                <button id="btnAppliquerStyleCss" onclick="appliquerStyleCss()">Appliquer</button>
+                                <button id="btnFontSizeStyleCss" onclick="changeTexteStyleStyleCss()">Absolu</button>
+                                <button onclick="resetStyleCss()">Recommencer</button>
+                            </div>
+                        </article>
+                    </div>
+                </article>
+                <article>
+                    <h2>Couleurs et arrières-plan</h2>
+                    <p>A suivre</p>
+                </article>
+                <article>
+                    <h2>Couleurs et arrières-plan</h2>
+                    <p>A suivre</p>
+                </article>
+                <article>
+                    <h2>Modifier l’apparence</h2>
+                    <p>A suivre</p>
+                </article>
+                <article>
+                    <h2>Les pseudo-classes</h2>
+                    <p>A suivre</p>
+                </article>
             </article>
         </section>
         <section>
@@ -315,42 +333,58 @@
         <section id="Javascript">
             <article>
                 <h1>Où?</h1>
-                <p>Comme avec le css, on peut en mettre dans une balise html (à éviter si possible).<br>
-                Il possible de placer une double balises script dans code html et on place nos lignes de js.<br>
-                Note : la balise noscript existe aussi quand indiquer au utilisateur qui utiliserait un navigateur ne gérant pas js un peu message.</p>
-                <p>Toujours comme avec css, on peut placer dans le head avec une balise script avec une src indiquant où se trouve le fichier.</p>
-                <p>Mais on pourrait se trouver avec des comportements bizarres : on manipulera des élémnts denotre page.<br>
-                Or tant que le navigateur n'a pas encore lu dans la page html, il ne reconnaîtra pas ces éléments là.<br>
+                <p>Comme avec le css, on peut en mettre dans une balise html (à éviter si possible).
+                Il possible de placer une double balises script dans code html et on place nos lignes de js.
+                Note : la balise noscript existe aussi quand indiquer au utilisateur qui utiliserait un navigateur ne gérant pas js un peu message.
+
+                Toujours comme avec css, on peut placer dans le head avec une balise script avec une src indiquant où se trouve le fichier.
+
+                Mais on pourrait se trouver avec des comportements bizarres : on manipulera des élémnts denotre page.
+                Or tant que le navigateur n'a pas encore lu dans la page html, il ne reconnaîtra pas ces éléments là.
                 Pour se faire, on appelera le script à la fin du body</p>
             </article>
             <article>
                 <h1>Sortie rapide</h1>
-                <p>On peut rapidement afficher des valeurs avec console.log();<br>
-                console.log(5); sortira une ligne 5 dans la console.</p>
-                <p>alert()  affiche une sorte de pop up avec la valeur qu'on souhaite afficher</p>
+                <p>On peut rapidement afficher des valeurs avec console.log();
+
+                <i>console.log(5); sortira une ligne 5 dans la console.</i>
+
+                alert()  affiche une sorte de pop up avec la valeur qu'on souhaite afficher</p>
             </article>
             <article>
                 <h1>Les variables</h1>
-                <p>Javascript gére ses variables manières dynamiques c'est à dire qu'il détermine lui-même le type de la variable.<br>
-                En indiquant le nom de la variable et en lui assignant une variable avec un égal, il va "s'occuper le typage".<br>
-                Exemple : maVariable = 5;
-                Soucis cette variable à une portée globale<br>
-                En commençant par let, on limite sa portée au block où il a été déclaré et ses enfants.<br>
+                <p>Javascript gére ses variables manières dynamiques c'est à dire qu'il détermine lui-même le type de la variable.
+                En indiquant le nom de la variable et en lui assignant une variable avec un égal, il va "s'occuper le typage".
+                <i>Exemple : maVariable = 5;</i>
+                Soucis cette variable à une portée globale
+
+                En commençant par let, on limite sa portée au block où il a été déclaré et ses enfants.
+
                 On verra aussi du var mais est déprécié</p>
-                <p>Du fait du typage dynamique, js rajoute une condition supplémentaire : === ou !==<br>
-                En plus de vérifier l'égalité ou la différence, il vérifie si le type match entre les 2 éléments<br>
-                Exemple: maVariable === 8; <br>
-                Si maVarible = "8", on aura false en retour</p>
-                <p>Cas particulier NaN et Infinity</p>
-                <p>Const existe aussi en js et comme pour c#, on l'utilisera pour les constantes.</p>
-                <p>Les conventions d'écriture sont les mêmes qu'en c#</p>
+                <p>Du fait du typage dynamique, js rajoute une condition supplémentaire : === ou !==
+
+                En plus de vérifier l'égalité ou la différence, il vérifie si le type match entre les 2 éléments
+
+                <i>Exemple: maVariable === 8;</i>
+
+                Si maVarible = "8", on aura false en retour
+                
+                <u>Cas particulier :</u> NaN et Infinity
+                    
+                Const existe aussi en js et comme pour c#, on l'utilisera pour les constantes.
+                Les conventions d'écriture sont les mêmes qu'en c#</p>
                 <h2>Parsing</h2>
-                <p>On retrouve le ".toString()"</p>
-                <p>Petite nouveauté : "parseInt()"", "parseFloat()"",... comme leur nom l'indique parse les variables</p>
-                <p>On puet avoir l'indication de la variable avec "type of"</p>
-                <p>On trouvera d'autre format comme le type date, les fonctions</p>
-                <p>Il y a aussi les collections (articles à venir).</p>
-                <p>Le type null est présent mais est différent de "non assigné" et "non défini"</p>
+                <p>On retrouve le ".toString()"
+
+                Petite nouveauté : "parseInt()"", "parseFloat()"",... comme leur nom l'indique parse les variables.
+
+                On peut avoir l'indication de la variable avec "type of"
+                
+                On trouvera d'autre format comme le type date, les fonctions.
+
+                Il y a aussi les collections (articles à venir).
+
+                Le type null est présent mais est différent de "non assigné" et "non défini"</p>
 
             </article>
         </section>
