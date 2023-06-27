@@ -1,12 +1,24 @@
 /*Style global*/
 section{
     padding:10px;
-    border: 2px black solid
+    border: 2px black solid;
+}
+section p{
+    white-space : pre-line;
+}
+h1{
+    font-size: 200%;
+    margin: 0.5%;
+    margin-left: 0%;
+    margin-right: 0%;
 }
 .example{
     border:1px grey solid;
     border-radius: 15px;
     background-color: rgb(240, 240, 240);
+}
+.example p{
+    margin : 0.5%;
 }
 /*Partie "pratique*/
 #labo1, #labo2{
@@ -26,6 +38,10 @@ section{
 }
 #labo1Aperçu h1, #labo1Aperçu p{
     margin: 0px;
+}
+#labo2 .example{
+    height: 175px;
+    max-height: 175px;
 }
 
 

@@ -10,15 +10,20 @@
         <section id="navigateur">
             <article>
                 <h1>Ton navigateur est un outils puissant</h1>
-                <p>La création d'un site web page html a pour pour but d'être lu sur un navigateur.<br>
-                Mais ton navigateur peut aussi t'aider dans le développement!<br>
+                <p>La création d'un site web page html a pour pour but d'être lu sur un navigateur.
+
+                Mais ton navigateur peut aussi t'aider dans le développement!
+
                 Par exemple sur l'image suivante, tu peut voir la page google ouverte avec l'inspecteur de firefox.
                 Il existe des raccourcis pour l'ouvrir mais on peut aussi y accéder depuis la paramètre du navigateur.</p>
                 <img src="./asset/googleDansInspecteur.png">
                 <p>Pour cette partie de la formation, on se concentrer sur les onglets <b>Inspecteur</b> et <b>Console</b>
                     L'inspecteur va nous permettre de voir nos balises html et l'application des styles sur celles-ci. 
-                    Quand à la Console, elle est présente pour les messages d'erreur et certaines sorties de notre fichiers javascripts.<br><br>
-                    Les détails des balises de cette section seront expliqués plus tard.<br>
+                    Quand à la Console, elle est présente pour les messages d'erreur et certaines sorties de notre fichiers javascripts.
+
+
+                    Les détails des balises de cette section seront expliqués plus tard.
+
                     Le plus important à retenir ici, c'est que ton navigateur est ton ami!
                 </p>
             </article>
@@ -28,19 +33,23 @@
                 <h1>Les balises textes et les collections</h1>
                 <h2>Le titre précédent est dans une double balise h1 (et ce sous-titre dans du h2)</h2>
                 <h6>On peut descendre jusqu'à 6 niveaux de titre (ici h6)</h6>
-                <p>paragraphe</p>
+                <p>les paragraphes sont dans des balises < p > </p>
                 <p>la balise br permet de faire un retour à la ligne supplémentaire</p>
                 <p>Comme ça!</p><br>
                 <h2>Balises structurantes</h2>
                 <p>Historiquement les textes étaient stockés dans des div.</p>
-                <p>On peut toujours en faire, mais l'arrivée de balise plus explicite que comme section ou article sont à privilégié.<br>
-                Leurs comportement ne diffère pas du div mais elles rendent la lecture du fichier html plus simple.<br>
+                <p>On peut toujours en faire, mais l'arrivée de balise plus explicite que comme section ou article sont à privilégié.
+                Leurs comportement ne diffère pas du div mais elles rendent la lecture du fichier html plus simple.
+
                 Dans cette même logique, il existe des balises pour des zones de site : navbar, footer, aside, header,...</p>
             
-                <span>Une balise span existe aussi.<br>
+                <span>Une balise span existe aussi.
+
                 Elle fait comme la balise div à la différence qu'elle fonctionne en "inline" plutôt qu'en "block" (détail plus loin)</span>
-                <p>Un commentaire peut être glissé dans le fichier html.<br>
-                Il ne sera pas exécuté par le navigateur, mais pourra être lu dans l'inspecteur<br>
+                <p>Un commentaire peut être glissé dans le fichier html.
+
+                Il ne sera pas exécuté par le navigateur, mais pourra être lu dans l'inspecteur
+
                 Pour ce faire, on encadrera ce qu'on veut commenter avec < !-- et terminera par --></p>
                 <!--Comme ceci-->
                 
@@ -72,7 +81,8 @@
                     <dd>définition 2</dd>
                 </dl>
                 <h2>On peut aussi faire texte avec des liens</h2>
-                <a href ="https://www.google.com" target="_blank">Un lien avec une page externe, le target blank ouvre la page dans un autre onglet (ici google) </a><br>
+                <a href ="https://www.google.com" target="_blank">Un lien avec une page externe, le target blank ouvre la page dans un autre onglet (ici google) </a>
+
                 <a href="#navigateur">Ou un lien sur un élément de la page, on indiquera l'id de l'élément (on parle dans ce cas d'un ancre)</a>
             </article>
         </section>
@@ -80,12 +90,12 @@
             <article>
                 <h1>les médias</h1>
                 <p>On peut disposer des éléments qui ne sont pas des textes comme des images ou des vidéos.</p>
-                <p>Pour une image, on utilisera la balise orpheline img.<br>
-                Cette balise peut utliser les attribut alt et title.<br>
-                alt sert surtout pour la navigateur aidant les personnes avec un handicap<br>
+                <p>Pour une image, on utilisera la balise orpheline img.;
+                Cette balise peut utliser les attribut alt et title.
+                alt sert surtout pour la navigateur aidant les personnes avec un handicap visuel.
                 title permet d'afficher un texte au survol de l'image avec la souris</p>
                 <img src="./asset/chat.jpg" alt="une image de chat" title="une image de chat">
-                <p>On peut utiliser la double balise figure pour encadrer une image accompagnée d'une légende<br>
+                <p>On peut utiliser la double balise figure pour encadrer une image accompagnée d'une légende.
                 Cette légende sera dés lors dans une bouble balise figcaption</p>
                 <figure>
                     <figcaption>Toujours le même chat</figcaption>
@@ -96,56 +106,57 @@
                 <video controls>
                     <source src="http://techslides.com/demos/sample-videos/small.ogv">
                 </video>
-                <p>Très rare ou d'une utilité quand on n'apprécie pas les : iframes (toujours pas dans la formation)<br>
-                Ce type de balise permet de faire un bout de site dans le notre<br>
+                <p>Très rare ou d'une utilité quand on n'apprécie pas les : iframes (toujours pas dans la formation).
+                Ce type de balise permet de faire un bout de site dans le notre.
                 Par exemple: embarquer une vidéo youtube ou une pub sur le côté de beaucoup de site</p>
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/xvFZjo5PgG0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                <p>Ici, j'ai tenter de mettre un rick roll, mais je me suis heurté à un soucis que tu risque de rencontré : le droit d'auteur<br>
-                Dans ce cas, il indique que la vidéo n'est pas disponible mais il donne un lien pour y accéder.<br>
+                <p>Ici, j'ai tenter de mettre un rick roll, mais je me suis heurté à un soucis que tu risque de rencontré : le droit d'auteur
+                Dans ce cas, il indique que la vidéo n'est pas disponible mais il donne un lien pour y accéder.
                 Pour avoir ce boût de code depuis youtube, passe par "partager" sous la vidéo voulue, on choisit "embed" et youtube on donne les balises.</p>
             </article>
         </section>
         <section id="BaseCss">
             <article>
                 <h1>Le Cascade Style Sheet</h1>
-                <p>On vu les balises html.<br>
+                <p>On vu les balises html.
                 Avec le css, on peut leur changer leur apparance</p>
                 <h2>Disposition</h2>
-                <p>On peut placer du style dans nos balises html<br>
-                    <strong style="color:red">C'est déconseillé</strong> (même si je viens de le faire pour mettre en rouge mon déconseillé).<br>
+                <p>On peut placer du style dans nos balises html.
+                    <strong style="color:red">C'est déconseillé</strong> (même si je viens de le faire pour mettre en rouge mon déconseillé).
                 La raison principale, c'est que ce style là est prioritaire comparé à celui qu'on retrouvera dans nos fichier css externe.</p>
                 <h2>Dans notre fichier externe</h2>
-                <p>Transition impecable pour le css dans un fichier externe!<br>
+                <p>Transition impecable pour le css dans un fichier externe!
                 On appelera ce fichier dans la balise head de note fichier html</p>
                 <p>Par une balise orpheline link, avec une propriété rel="stylesheet" et une indication de la source de fichier : href="./style/style.css" </p>
-                <p>Dans ce fichier, on indique les éléments qu'on veut modifier par un <b>sélecteur</b>, puis des accolades avec le style qu'on veut appliquer.<br>
-                Chaque style devra être terminer par une ;<br>
+                <p>Dans ce fichier, on indique les éléments qu'on veut modifier par un <b>sélecteur</b>, puis des accolades avec le style qu'on veut appliquer.
+                Chaque style devra être terminer par une ;
+
                 Et on peut commenter acomme en c# : avec // pour une ligne et /* pour plusieurs*/</p>
                 <h3>Les sélecteurs</h3>
-                <p>On peut indiquer un type de balise comme body.<br>
-                On être plus précis en indiquant des classe en commençant par un point : .maClasse<br>
+                <p>On peut indiquer un type de balise comme body.
+                On être plus précis en indiquant des classe en commençant par un point : .maClasse
                 #monId pour les identifiants.</p>
-                <p>On peut préciser notre sélecteur<br>
-                Par exemple: body .maClasse pour toutes les balises avec la classe maClasse contenu dans mon body<br>
-                Avec body > .maClasse, on limite aux enfants directement sous body<br>
-                body + .maClasse touche aux premier enfant correspond<br>
+                <p>On peut préciser notre sélecteur.
+                Par exemple: body .maClasse pour toutes les balises avec la classe maClasse contenu dans mon body.
+                Avec body > .maClasse, on limite aux enfants directement sous body.
+                body + .maClasse touche aux premier enfant correspond.
                 body img[alt] toujours au images avec un attribut alt</p>
                 <p>On peut mettre plusieurs sélecteurs si on les sépare par des ',' avant un block de style(entre les accolades). </p>
                 <p>Il y a un ordre de lecture des styles:</p>
                 <ul>
-                    <li>le style dans les balises html</li>
-                    <li>le style sur les sélecteurs d'id du dernier fichier css indiqué</li>
-                    <li>le style sur les sélecteurs d'id des premiers fichiers css indiqués</li>
-                    <li>le style sur les sélecteurs de classe du dernier fichier css indiqué</li>
-                    <li>le style sur les sélecteurs de classe des premiers fichiers css indiqués</li>
+                    <li title="ex : <div style='...'>">le style dans les balises html</li>
+                    <li title="ex : #id">le style sur les sélecteurs d'id du dernier fichier css indiqué</li>
+                    <li title="ex : #id">le style sur les sélecteurs d'id des premiers fichiers css indiqués</li>
+                    <li title="ex : .class">le style sur les sélecteurs de classe du dernier fichier css indiqué</li>
+                    <li title="ex : .class">le style sur les sélecteurs de classe des premiers fichiers css indiqués</li>
                     <li>...</li>
                 </ul>
-                
                 <div id="labo1">
                     <article class="example" id="labo1Example">
                         <div class="maDiv">
                             <h1>Un titre h1 dans un bloc avec une classe "maDiv"</h1>
-                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Saepe aliquam enim quasi esse sapiente quam sit sunt autem quisquam laborum?</p>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                                Saepe aliquam enim quasi esse sapiente quam sit sunt autem quisquam laborum?</p>
                         </div>
                         <div>
                             <h2>Un plus "petit" titre</h2>
@@ -199,38 +210,40 @@
                 <p>Maintenant qu'on a vu comment désigner des balises html par des classes ou des id, nous allons voir des styles que l'on peut leur appliquer.</p>
                 <h2>Formatage du texte</h2>
                 <h3>Font-size</h3>
-                <p>Avec <b>font-size</b>, on peut gérer la taille du texte.<br>
+                <p>Avec <b>font-size</b>, on peut gérer la taille du texte.
                 En fonction de "l'unité" choisit, la taille sera absolue (taille fixe) ou relative à la fenêtre ou la balise qui contient ce texte.</p>
-                <p>px pour les pixels va définir une taille fixe de notre texte.<br>
+                <p>px pour les pixels va définir une taille fixe de notre texte.
                 %, em et rem va faire varier la taille en fonction des parents (rem se base sur la fonct-size de la balise html).</p>
                 <h3>Gras</h3>
                 <p> Avec <b>font-weight : bold;</b> on peut mettre en grase les éléments choisit</p>
                 <h3>Italique</h3>
                 <p>On peut mettre en italique avec <b>font-style : italic;</b></p>
                 <h3>Alignement horizontal</h3>
-                <p>On jouer sur l'alignement horizontal avec <b>text-align</b>.<br> les valeurs possibles sont :</p>
+                <p>On jouer sur l'alignement horizontal avec <b>text-align</b>.
+                Les valeurs possibles sont :</p>
                 <ul>
-                    <li>center</li>
-                    <li><u>left</u></li>
-                    <li>right</li>
-                    <li>justify</li>
+                    <li title="texte centré">center</li>
+                    <li title="texte aligné à gauche"><u>left</u></li>
+                    <li title="texte aligné à droite">right</li>
+                    <li title="justifie (espace) le texte pour prendre l'espace">justify</li>
                 </ul>
                 <h3>Casse du texte</h3>
                 <p>On peut aussi modifier la casse du texte grâce à <b>text-transform</b>
-                <br> les valeurs possibles sont :</p>
+                Les valeurs possibles sont :</p>
                 <ul>
-                    <li>capitalize</li>
-                    <li>uppercase</li>
-                    <li>lowercase</li>
-                    <li><u>none</u></li>
+                    <li title="toute les première lettre de chaque mot est en majuscule.">capitalize</li>
+                    <li title="tout en majuscule">uppercase</li>
+                    <li title="tout en minuscule">lowercase</li>
+                    <li title="ne change rien"><u>none</u></li>
                 </ul>
                 <h3>mises en valeur du texte</h3>
-                <p><b>text-decoration</b> permet de jouer sur la mise en valeur du texte (comme les balises b, i , strong ...)<br> les valeurs possibles sont :</p>
+                <p><b>text-decoration</b> permet de jouer sur la mise en valeur du texte (comme les balises b, i , strong ...).
+                Les valeurs possibles sont :</p>
                 <ul>
-                    <li>underline</li>
-                    <li>line-through</li>
-                    <li>overline</li>
-                    <li><u>none</u></li>
+                    <li title="souligne">underline</li>
+                    <li title="barre">line-through</li>
+                    <li title="ligne au dessus">overline</li>
+                    <li title="rien"><u>none</u></li>
                 </ul>
                 <div id="labo2">
                     <article class="example" id="labo2Example">
@@ -252,7 +265,6 @@
         <section>
             <article>
                 <h1>Les formulaires</h1>
-                
             </article>
         </section>
         <section id="Javascript">
