@@ -140,6 +140,57 @@
                     <li>le style sur les sélecteurs de classe des premiers fichiers css indiqués</li>
                     <li>...</li>
                 </ul>
+                
+                <div id="labo1">
+                    <article class="example" id="labo1Example">
+                        <div class="maDiv">
+                            <h1>Un titre h1 dans un bloc avec une classe "maDiv"</h1>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>Saepe aliquam enim quasi esse sapiente quam sit sunt autem quisquam laborum?</p>
+                        </div>
+                        <div>
+                            <h2>Un plus "petit" titre</h2>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Autem, itaque.</p>
+                        </div>
+                        <div class="maDiv">
+                            <h2>Un titre h2 dans un bloc avec une classe "maDiv"</h2>
+                            <p id="monId">Lorem ipsum dolor sit amet consectetur adipisicing elit. <b>avec id monId</b></p>
+                        </div>
+                    </article>
+                    <article class="expérimentation" id="mesCheckBox">
+                        <div>
+                            <label for="testerVosClasses"><strong>Appliquons un fond vert sous:</strong></label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="labo1H1" name="h1" onchange="applicationFondVert('labo1H1','h1')" checked="false">
+                            <label for="labo1H1">le h1</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="labo1H2" name="h2" onchange="applicationFondVert('labo1H2','h2')" checked="false">
+                            <label for="labo1H2">les h2</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="labo1H1Div" name="div" onchange="applicationFondVert('labo1H1Div','div')" checked="false">
+                            <label for="labo1H1Div">les div</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="labo1H1LesClassemaDiv" name="maDiv" onchange="applicationFondVert('labo1H1LesClassemaDiv','.maDiv')" checked="false">
+                            <label for="labo1H1ClassemaDiv">les classes maDiv</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" id="labo1H1IdmonId" name="monId" onchange="applicationFondVert('labo1H1IdmonId','#monId')" checked="false">
+                            <label for="labo1H1IdmonId">l'id monId</label>
+                        </div>
+                        
+                        <div>
+                            <input type="checkbox" id="labo1PClassemaDiv" name="pMaDiv" onchange="applicationFondVert('labo1PClassemaDiv', '.maDiv p')" checked="false">
+                            <label for="labo1PClassemaDiv">les paragraphes dans les class maDiv</label>
+                        </div>
+                        <div id="labo1Aperçu" style="border: 1px grey solid; height: 100%;">
+                            <h1>Aperçu css</h1>
+                            <p id="labo1AperçuParagraphe"></p>
+                        </div>
+                    </article>
+                </div>
             </article>
         </section>
         <section id="styleCss">
@@ -181,8 +232,8 @@
                     <li>overline</li>
                     <li><u>none</u></li>
                 </ul>
-                <div id="labo1">
-                    <article class="example">
+                <div id="labo2">
+                    <article class="example" id="labo2Example">
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis nam maiores harum aut recusandae exercitationem fugiat velit doloribus sed quia! Eveniet eius beatae ab fugiat ratione animi a alias laboriosam at itaque velit possimus nihil doloremque pariatur, perspiciatis facilis ipsa? Officiis quod ut iste nisi enim? Modi assumenda iste at.</p>
                     </article>
                     <article class="expérimentation">
